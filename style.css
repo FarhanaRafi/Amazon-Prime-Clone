@@ -1,94 +1,104 @@
-body{
+body {
     background-color: #0f171e;
 }
-nav{
+
+nav {
     background-color: #12191e;
     color: white;
 }
-#home-btn{
-    border-bottom:0.5px solid white;
+
+#home-btn {
+    border-bottom: 0.5px solid white;
     padding-left: 0;
     padding-right: 0;
     margin-right: 8px;
 }
-.nav-link{
+
+.nav-link {
     padding: 0;
 }
-#user-img{
+
+#user-img {
     border-radius: 50%;
 }
-.bi-search{
+
+.bi-search {
     font-size: 20px;
 }
 
-.carousel-inner img{
+.carousel-inner img {
     height: 80vh;
-    object-fit:fill;
+    object-fit: fill;
 }
 
-@media (max-width: 900px){
-    .carousel-inner img{
+@media (max-width: 900px) {
+    .carousel-inner img {
         height: 40vh;
-        object-fit:fill;
+        object-fit: fill;
     }
 }
 
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     width: 7%;
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     width: 13px;
     height: 13px;
     border-radius: 50%;
 }
 
-.movie-card{
+.movie-card {
     position: relative;
     transition: transform 0.5s;
 }
 
-.movie-badge{
+.movie-badge {
     position: absolute;
     left: 0;
 }
+
 .navbar-toggler {
     line-height: 1;
-    
+
     background-color: #dae0e5;
     border: 1px solid #f8f9fa;
 }
 
-.info-container{
+.info-container {
     position: absolute;
     z-index: 2;
     opacity: 0;
     padding: 20px;
-    padding-right: -10px;
-    background: rgb(121,124,123);
+    margin-right: 5px;
+    /* padding-right: 5px; */
+    background: rgb(121, 124, 123);
     background-image: linear-gradient(0deg, rgb(28, 28, 28) 39%, rgba(67, 66, 66, 0.372) 118%);
     transform: translateY(-60px);
     transition: opacity 0.3s, transform 0.5ms;
     overflow: hidden;
 }
-.movie-card:hover .info-container{
+
+.movie-card:hover .info-container {
     opacity: 1;
     transform: translateY(-38px);
 }
 
-.movie-card:hover{
+.movie-card:hover {
     transform: scale(1.2);
     z-index: 2;
 }
 
 
-.info-container h6{
+.info-container h6 {
     margin-top: -8px;
     font-size: 18px;
     color: #f8f9fa;
 }
 
-.info-container p{
+.info-container p {
     font-size: 13px;
     color: #f8f9fa;
     -webkit-box-orient: vertical;
@@ -98,7 +108,7 @@ nav{
     white-space: normal;
 }
 
-.play-btn{
+.play-btn {
     font-size: 30px;
     color: white;
     margin-top: -19px;
